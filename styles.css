@@ -1,0 +1,249 @@
+:root {
+    --width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+h1, h2, h3, button {
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.matt-and-mary {
+    font-size: 4rem;
+    letter-spacing: 0.28rem;
+    font-family: 'Cardo', Helvetica, sans-serif;
+    font-weight: normal;
+    margin-block-end: 2rem;
+    padding: 0 8px;
+}
+
+.date {
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Cardo', Helvetica, sans-serif;
+    margin-block-end: 2rem;
+    padding: 0 8px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 32px 8px;
+    width: 700px;
+}
+
+.nav button {
+    flex-direction: row;
+    text-decoration: none;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    padding: 4px 8px;
+    color: #62707F;
+    background-color: white;
+    border: none;
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 2px #62707F solid;
+}
+
+.nav button:hover, .nav button:focus-visible {
+    border-bottom: 2px #62707F solid;
+    z-index: 200;
+}
+
+.nav button:hover {
+    cursor: pointer;
+}
+
+.nav button[aria-current=true] {
+    border-bottom: 2px #62707F solid;
+}
+
+.nav hr {
+    width: 150px;
+    height: 0px;
+    margin-block-start: 0.75rem;
+    color: #62707F;
+}
+
+main {
+    padding-bottom: 100px;
+}
+
+a {
+    color: #007575;
+    padding: 4px 0;
+}
+
+a:hover {
+    color: #9F2B68;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 8px;
+    width: 1000px;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5;
+}
+
+#wedding-details {
+    padding-right: 16px;
+}
+
+.banner {
+    width: 380px;
+}
+
+.img-right {
+    float: right;
+    padding-left: 16px;
+    padding-bottom: 32px;
+}
+
+#wedding-details h3 {
+    margin-block-start: 4rem;
+}
+
+#accommodations {
+    margin-block-start: 4rem;
+}
+
+#cat {
+    display: flex;
+    margin-block-start: 4rem;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 640px;
+    background-color: #DFE4E7;
+}    
+
+footer {
+    background-color: #DFE4E7;
+}
+
+canvas {
+    image-rendering: pixelated;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+.bijou-text {
+    margin-block-start: 3.7rem;
+    font-size: 1rem;
+    font-family: 'Quicksand', Helvetica, sans-serif;
+}
+
+.bijou-button {
+    border: none;
+    border-radius: 18px;
+    padding: 10px;
+    background-color: #62707F;
+    color: white;
+    font-family: 'Quicksand', Helvetica, sans-serif;
+    letter-spacing: 0.05rem;
+    margin-bottom: 50px;
+}
+
+.bijou-button:focus-visible {
+    border: 2px solid white;
+    outline: 2px solid black;       
+}
+
+.bijou-button:hover {
+    cursor: pointer;
+}
+
+#faq p {
+    margin-block-start: 0.75rem;
+    margin-block-end: 2.5rem;
+}
+
+@media screen and (max-width: 1016px) {
+
+    .container {
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 740px) {
+    #cat {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+
+    canvas {
+        margin: 0 auto;
+    }
+
+    .bijou-text {
+        margin-block-start: 0rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    header {
+        padding: 25px 0px;
+    }
+
+    .nav {
+        width: 80%;
+    }
+
+    .nav hr {
+        width: 50px;
+    }
+
+    #wedding, #travel-details {
+        flex-direction: column;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .nav hr {
+        display: none;
+    }
+}
