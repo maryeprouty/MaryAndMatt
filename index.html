@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Matt and Mary</title>
+        <title>Mary and Matt</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="styles.css" rel="stylesheet">
+        <link href="./styles.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     </head>
     <body onload="init()">
         <header>
-            <h1 class="matt-and-mary">Matt & Mary</h1>
+            <h1 class="matt-and-mary">Mary & Matt</h1>
             <p class="date">September 14, 2025 | Banner Elk, North Carolina</p>
             <nav class="nav">
                 <hr>
@@ -23,7 +23,7 @@
             </nav>
         </header>
         <main>
-            <div class="main">
+            <div id="main" class="main">
                 <div id="wedding" class="container">
                     <img src="./static/fancy-matt-and-mary.jpg" alt="Mary and Matt wearing formal attire in a statue garden."
                            class="banner img-right">
@@ -34,7 +34,7 @@
                         <p>The White Crow</p>  
                         <a href="https://maps.app.goo.gl/KBr7crMoWfdJVm9Z6" target="_blank">401 White Crow Lane, Banner Elk, NC, 28604</a>
                         <h3>Attire</h3>
-                        <a href="https://www.brides.com/story/wedding-dress-code-explained#toc-black-tie:~:text=BY%C2%A0SASITHON%20PHOTOGRAPHY-,Formal,-or%20Black%2DTie" target="_blank">Formal</a>
+                        <p>Formal</p>
                         <p>(i.e., suit or dress)</p>
                         <p>Matt says, "It's our <i>wedding</i>. Dress up for us!"</p>
                     </div>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div id="faq" class="container" style="display:none">
-                    <img src="/static/matt-and-mary.jpg" alt="Matt and Mary smiling in a vineyard with mountains in the background."
+                    <img src="./static/matt-and-mary.jpg" alt="Matt and Mary smiling in a vineyard with mountains in the background."
                             class="banner img-right">
                     <div id="faq-details">
                         <h2>FAQ</h2>
@@ -77,7 +77,7 @@
                         <!-- <b>How do I RSVP?</b>
                         <p>You can text Matt or Mary. &#128522;</p> -->
                         <b>Do you have a registry?</b>
-                        <p>No, we simply request your presence. If you'd like to give us something, we will accept <a href="https://en.wikipedia.org/wiki/Red_envelope" target="_blank">red envelope money</a>!</p>
+                        <p>No, we simply request your presence. If you'd like to give us something, we will accept contributions to our honeymoon fund!</p>
                         <b>Will there be other events for those who aren't attending the wedding?</b>
                         <p>We plan to hold an informal event at a later date for those who are not attending our ceremony. This will give everyone a chance to celebrate with us.</p>
                     </div>
@@ -95,6 +95,6 @@
                 </div>
             </div>
         </footer>
-        <script src="script.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>

@@ -4,8 +4,6 @@ const CYCLE_LOOP = [
     2,
     1,
     2,
-    1,
-    2,
     0
 ];
 let currentLoopIndex = 0;

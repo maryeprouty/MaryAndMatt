@@ -1,4 +1,4 @@
-const CYCLE_LOOP = [0, 1, 2, 1, 2, 1, 2, 0];
+const CYCLE_LOOP = [0, 1, 2, 1, 2, 0];
 let currentLoopIndex = 0;
 let frameId = 0;
 let animate = true;
